@@ -11,7 +11,7 @@ bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
 
   userSteps[chatId] = { step: 0 };
-
+  delete userSteps[chatId];
   const welcome = `Assalomu alaykun,\nSiz bu bot orqali Raqon Education | oʻquv markazida boʻlib oʻtadigan\nDiagnostik test(DTM) imtihonlarida qatnashishga roʻyxatdan oʻtish\nuchun yaratildi.\nIltimos talim yoʻnalishingizni tanlang :`;
 
   const options = {

@@ -45,8 +45,9 @@ bot.on('message', (msg) => {
   var step = stepData.step;
 
   if (step == 0) {
-      stepData.fan = text;
     bot.sendMessage(chatId, "Iltimos, ism va familiyangizni kiriting:");
+      stepData.fan = text;
+    
     stepData.step = 1;
 } else if (step === 1) {
     stepData.name = text;

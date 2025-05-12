@@ -17,13 +17,13 @@ bot.onText(/\/start/, (msg) => {
   const options = {
     reply_markup: {
       keyboard: [
-        [Matematika — Ingiliz tili],     [Matematika — Ona tili],  
-        [Matematika — Fizika],           [Fizika — Matematika],  
-        [Ona tili — Ingiliz tili],       [Ingiliz tili — Ona tili],  
-        [Biologiya — Ona tili],          [Biologiya — Kimyo],  
-        [Kimyo — Biologiya],             [Kimyo — Matematika],  
-        [Tarix — Ona tili],              [Tarix — Ingiliz tili],  
-        [Huquq — Ingiliz tili],          [Geografiya — Matematika]
+        ['Matematika — Ingiliz tili'],     ['Matematika — Ona tili'],  
+        ['Matematika — Fizika'],           ['Fizika — Matematika'],  
+        ['Ona tili — Ingiliz tili'],       ['Ingiliz tili — Ona tili'],  
+        ['Biologiya — Ona tili'],          ['Biologiya — Kimyo'],  
+        ['Kimyo — Biologiya'],             ['Kimyo — Matematika'],  
+        ['Tarix — Ona tili'],              ['Tarix — Ingiliz tili'],  
+        ['Huquq — Ingiliz tili'],          ['Geografiya — Matematika']
       ],
       resize_keyboard: true,
       one_time_keyboard: true,

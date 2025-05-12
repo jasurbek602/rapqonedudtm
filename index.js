@@ -12,16 +12,23 @@ bot.onText(/\/start/, (msg) => {
 
   userSteps[chatId] = { step: 0 };
   
-  const welcome = `Assalomu alaykun,\nSiz bu bot orqali Raqon Education | oʻquv markazida boʻlib oʻtadigan\nDiagnostik test(DTM) imtihonlarida qatnashishga roʻyxatdan oʻtish\nuchun yaratildi.\nIltimos talim yoʻnalishingizni tanlang :`;
+  const welcome = `Assalomu alaykum!\nSiz 🏛 Rapqon Education | o‘quv markazi tomonidan tashkil etilgan DTM diagnostik testida ishtirok etish uchun ro‘yxatdan o‘tmoqdasiz.
+
+Ishtirok narxi: 10 000 so‘m
+Bilimingizni sinab ko‘ring va natijangizni DTM mezonlari asosida baholang!
+
+Iltimos, ta’lim yo‘nalishingizni tanlang::`;
 
   const options = {
     reply_markup: {
       keyboard: [
-        ['Matematika Ingliz tili'],
-        ['Matematika Fizika'],
-        ['Ingliz tili Ona tili'],
-        ['Biologiya Ona tili'],
-        ['Biologiya Kimyo']
+        [Matematika — Ingiliz tili],     [Matematika — Ona tili],  
+        [Matematika — Fizika],           [Fizika — Matematika],  
+        [Ona tili — Ingiliz tili],       [Ingiliz tili — Ona tili],  
+        [Biologiya — Ona tili],          [Biologiya — Kimyo],  
+        [Kimyo — Biologiya],             [Kimyo — Matematika],  
+        [Tarix — Ona tili],              [Tarix — Ingiliz tili],  
+        [Huquq — Ingiliz tili],          [Geografiya — Matematika]
       ],
       resize_keyboard: true,
       one_time_keyboard: true,
@@ -58,7 +65,8 @@ bot.on('message', (msg) => {
           ['11-sinf'],
           ['10-sinf'],
           ['9-sinf'],
-          ['8-sinf']
+          ['8-sinf'],
+          ['"Boshqa"']
         ],
         resize_keyboard: true,
         one_time_keyboard: true,

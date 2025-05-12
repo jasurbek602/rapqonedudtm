@@ -12,12 +12,7 @@ bot.onText(/\/start/, (msg) => {
 
   userSteps[chatId] = { step: 0 };
   
-  const welcome = `Assalomu alaykum!\nSiz 🏛 Rapqon Education | o‘quv markazi tomonidan tashkil etilgan DTM diagnostik testida ishtirok etish uchun ro‘yxatdan o‘tmoqdasiz.
-
-Ishtirok narxi: 10 000 so‘m
-Bilimingizni sinab ko‘ring va natijangizni DTM mezonlari asosida baholang!
-
-Iltimos, ta’lim yo‘nalishingizni tanlang::`;
+  const welcome = `Assalomu alaykum!\nSiz 🏛 Rapqon Education | o‘quv markazi tomonidan tashkil etilgan DTM diagnostik testida ishtirok etish uchun ro‘yxatdan o‘tmoqdasiz.\n\n\nIshtirok narxi: 10 000 so‘m\nBilimingizni sinab ko‘ring va natijangizni DTM mezonlari asosida baholang!\n\nIltimos, ta’lim yo‘nalishingizni tanlang:`;
 
   const options = {
     reply_markup: {
@@ -66,7 +61,7 @@ bot.on('message', (msg) => {
           ['10-sinf'],
           ['9-sinf'],
           ['8-sinf'],
-          ['"Boshqa"']
+          ['Boshqa']
         ],
         resize_keyboard: true,
         one_time_keyboard: true,
